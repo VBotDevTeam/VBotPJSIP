@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 	s.vendored_frameworks   = "VBotPJSIP.framework"
 
 	s.libraries 			= 'stdc++'
-	s.frameworks            = "AudioToolbox", "AVFoundation", "CFNetwork",  "CoreMedia"
+	s.frameworks            = 'CoreFoundation', 'AudioToolbox', 'AVFoundation', 'GLKit', 'CFNetwork',  'CoreMedia'
 	s.xcconfig = {
         'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1',
 	}

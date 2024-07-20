@@ -10,9 +10,7 @@ Pod::Spec.new do |s|
 
 	s.source                = { :git => "https://github.com/VBotDevTeam/VBotPJSIP.git", :tag => s.version.to_s }
 	
-
-	s.platform              = :ios, "10.0"
-	s.requires_arc          = false
+	s.ios.deployment_target = '13.5'
 
 	s.preserve_paths        = "VBotPJSIP.framework/*"
 	s.public_header_files   = "VBotPJSIP.framework/Versions/A/Headers/**/*.{h,hpp}"
